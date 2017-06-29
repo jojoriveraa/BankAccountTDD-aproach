@@ -1,13 +1,14 @@
 test
 
-Create new BankAccount object
-deposit 50
-check Balance is 50
+DONE
+- Create new BankAccount object
+- deposit 50
+-- check Balance is 50
+- withdraw 30
+-- check balance is 20
+- balance should be private!
+- what about negative amounts?
 
-withdraw 30
-check balance is 20
+TO-DO
 
-balance should be private!
-
-what about negative amounts?
-any limits on max deposit?
+- any limits on max deposit?
