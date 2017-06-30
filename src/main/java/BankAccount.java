@@ -1,6 +1,7 @@
 
 public class BankAccount {
 
+	private static final int DEBT_LIMIT = -1000;
 	private int balance;
 
 	public BankAccount() {
@@ -15,9 +16,13 @@ public class BankAccount {
 		balance += i;
 	}
 
-	public void withdraw(int i) {
+	public boolean withdraw(int i) {
+		if(balance - i < DEBT_LIMIT){
+			return false;
+		}
 		balance -= i;
 		balance = (balance < 0) ? balance - 5 : balance;
+		return true;
 	}
 
 	public int getBalance() {
